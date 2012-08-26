@@ -41,8 +41,6 @@
 	[theItem setTitle:@"ssh"];
 	[theItem setHighlightMode:YES];
 	[theItem setMenu:serversMenu];
-	
-	//[theItem setView:[[HelloView alloc] init]];
 	[theItem retain];
 }
 
