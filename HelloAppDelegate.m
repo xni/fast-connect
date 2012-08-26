@@ -31,7 +31,8 @@
 	NSStatusItem *theItem = [bar statusItemWithLength:NSVariableStatusItemLength];
 	
 	ClickProcessor* cp = [[ClickProcessor alloc] init];
-	NSString* jsonString = @"{\"data\": [{\"display_name\": \"Development Win\", \"server_name\": \"server1.ru\"}, [\"Solution2\", {\"display_name\": \"Reports\", \"server_name\": \"server2.net\"}]]}";
+	NSString* path = [NSHomeDirectory() stringByAppendingPathComponent:@".fast_connect"];
+	NSString* jsonString = [NSString stringWithContentsOfFile:path];
 	NSMenu* serversMenu = generate_menu_from_JSON_config(jsonString, cp);
 	[jsonString release];
 	[serversMenu addItem:sep];

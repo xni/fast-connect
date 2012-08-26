@@ -1,0 +1,4 @@
+{"data": [
+    {"display_name": "Development Win", "server_name": "server1.ru"},
+    ["Solution2",
+        {"display_name": "Reports", "server_name": "server2.net"}]]}
