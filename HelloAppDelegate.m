@@ -34,9 +34,11 @@
 	NSString* path = [NSHomeDirectory() stringByAppendingPathComponent:@".fast_connect"];
 	NSString* jsonString = [NSString stringWithContentsOfFile:path];
 	NSMenu* serversMenu = generate_menu_from_JSON_config(jsonString, cp);
-	[jsonString release];
+	[cp release];
 	[serversMenu addItem:sep];
 	[serversMenu addItem:settings];
+	
+	[settings release];
 		
 	[theItem setTitle:@"ssh"];
 	[theItem setHighlightMode:YES];

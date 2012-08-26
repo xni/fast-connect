@@ -13,12 +13,12 @@
 
 NSMenuItem* menu_item_for_connection(Connection* connection, id click_processor) {
 	NSMenuItem* result = [[NSMenuItem alloc] init];
+	[click_processor retain];
 	[result setTitle:[connection getDisplayName]];
 	[result setRepresentedObject:connection];
 	[result setEnabled:YES];
 	[result setAction:@selector(menuItemSelected:)];
 	[result setTarget:click_processor];
-	[result retain];
 	return result;
 }
 
@@ -35,6 +35,7 @@ void populate_menu(NSMenu* parent, NSArray* data, id click_processor) {
 			Connection* connection = connection_from_dictionary((NSDictionary*)item);
 			NSMenuItem* menu_item = menu_item_for_connection(connection, click_processor);
 			[parent addItem:menu_item];
+			[menu_item release];
 		} else if ([item isKindOfClass:[NSArray class]]) {
 			NSMenuItem* submenu_root = [[NSMenuItem alloc] init];
 			[submenu_root setTitle:[(NSArray*)item objectAtIndex:0]];
@@ -42,6 +43,7 @@ void populate_menu(NSMenu* parent, NSArray* data, id click_processor) {
 			populate_menu(submenu, (NSArray*)item, click_processor);
 			[submenu_root setSubmenu:submenu];
 			[parent addItem:submenu_root];
+			[submenu release];
 		}
 	}	
 }
