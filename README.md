@@ -17,4 +17,5 @@ program must be executed from the XCode.
 # Configuration
 
 Config is stored at `~/.fast_connect` . It is a JSON file with a very
-straightforward structure.
+straightforward structure. Config sample may be found in the
+[repository](https://github.com/xni/fast-connect/blob/master/.fast_connect.sample).
