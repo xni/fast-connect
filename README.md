@@ -3,7 +3,7 @@ fast-connect
 
 If you are involved into several projects or you are the maintainer
 of a complicated distributed projects, you may find it useful to
-group server into groups and give them some descriptions instead of names.
+organize servers into a groups and give them some descriptions instead of names.
 
 For example like that:
 
