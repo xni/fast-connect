@@ -13,9 +13,9 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		B923463015D644600015CC8F /* HelloView.m in Sources */ = {isa = PBXBuildFile; fileRef = B923462F15D644600015CC8F /* HelloView.m */; };
-		B928A61315DA45D000069880 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B928A61215DA45D000069880 /* JSONKit.m */; };
 		B928A64115DA626500069880 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = B928A64015DA626500069880 /* Connection.m */; };
 		B928A65715DA876100069880 /* config_parser.m in Sources */ = {isa = PBXBuildFile; fileRef = B928A65615DA876100069880 /* config_parser.m */; };
+		B9AAEE6915EA136E008E58F9 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AAEE6815EA136E008E58F9 /* JSONKit.m */; };
 		B9ECE50815DAD7470020C8E0 /* ClickProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECE50715DAD7470020C8E0 /* ClickProcessor.m */; };
 /* End PBXBuildFile section */
 
@@ -34,12 +34,12 @@
 		8D1107320486CEB800E47090 /* FastConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B923462E15D644600015CC8F /* HelloView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloView.h; sourceTree = "<group>"; };
 		B923462F15D644600015CC8F /* HelloView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloView.m; sourceTree = "<group>"; };
-		B928A61115DA45D000069880 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = "../../Downloads/johnezang-JSONKit-8215763/JSONKit.h"; sourceTree = SOURCE_ROOT; };
-		B928A61215DA45D000069880 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = "../../Downloads/johnezang-JSONKit-8215763/JSONKit.m"; sourceTree = SOURCE_ROOT; };
 		B928A63F15DA626500069880 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
 		B928A64015DA626500069880 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
 		B928A65615DA876100069880 /* config_parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = config_parser.m; sourceTree = "<group>"; };
 		B928A66C15DA880A00069880 /* config_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_parser.h; sourceTree = "<group>"; };
+		B9AAEE6715EA136E008E58F9 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		B9AAEE6815EA136E008E58F9 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		B9ECE50615DAD7470020C8E0 /* ClickProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickProcessor.h; sourceTree = "<group>"; };
 		B9ECE50715DAD7470020C8E0 /* ClickProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickProcessor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,8 +59,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B928A61115DA45D000069880 /* JSONKit.h */,
-				B928A61215DA45D000069880 /* JSONKit.m */,
+				B9AAEE6715EA136E008E58F9 /* JSONKit.h */,
+				B9AAEE6815EA136E008E58F9 /* JSONKit.m */,
 				256AC3D80F4B6AC300CF3369 /* HelloAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* HelloAppDelegate.m */,
 				B923462E15D644600015CC8F /* HelloView.h */,
@@ -206,10 +206,10 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* HelloAppDelegate.m in Sources */,
 				B923463015D644600015CC8F /* HelloView.m in Sources */,
-				B928A61315DA45D000069880 /* JSONKit.m in Sources */,
 				B928A64115DA626500069880 /* Connection.m in Sources */,
 				B928A65715DA876100069880 /* config_parser.m in Sources */,
 				B9ECE50815DAD7470020C8E0 /* ClickProcessor.m in Sources */,
+				B9AAEE6915EA136E008E58F9 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
