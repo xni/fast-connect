@@ -1,7 +1,7 @@
 fast-connect
 ============
 
-If you are involved into several projects or you are the maintainer
+If you are involved into a several projects or you are the maintainer
 of a complicated distributed projects, you may find it useful to
 organize servers into a groups and give them some descriptions instead of names.
 
